@@ -1,0 +1,34 @@
+.section-4__table {
+  width: 100%;
+  font-family: var(--secondary-font);
+}
+
+.section-4__thead {
+  height: 100px;
+}
+.section-4__thead th {
+    text-align: left;
+    width: calc(100% / 3);
+}
+.section-4__thead p {
+  font-size: 14px;
+  color: #999;
+  font-weight: 200;
+}
+
+.section-4__tbody {
+    width: 100%;
+}
+
+.section-4__title-job {
+    font-size: 30px;
+}
+
+.section-4__workplace {
+    font-size: 16px;
+    color: #666;
+}
+
+.section-4__tbody tr {
+  height: 100px;
+}

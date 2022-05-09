@@ -1,0 +1,42 @@
+@import url('./animation.css'); /* Using a url */
+
+.section-3__content__item {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.section-3__content__img-wrapper {
+  width: 85%;
+  height: 300px;
+  border-radius: 500px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.section-3__content__img-wrapper img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: ease 300ms;
+  cursor: pointer;
+}
+
+.section-3__content__img-wrapper img:hover {
+  filter: none;
+  animation-name: shake;
+  animation-duration: 600ms;
+}
+
+.section-3__content__img-wrapper p {
+  font-size: 3rem;
+  font-weight: 200;
+  font-family: var(--secondary-font);
+}
