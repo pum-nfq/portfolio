@@ -37,6 +37,9 @@
 
   transition: ease-in 200ms;
 }
+.navbar__item img {
+  transition: ease 300ms;
+}
 
 .navbar__item i:hover {
   color: orangered;
@@ -49,7 +52,7 @@
 }
 
 .navbar__item:nth-child(1) {
-  gap: 3rem;
+  gap: 10%;
 }
 
 .navbar__item:nth-child(2) {
@@ -84,7 +87,6 @@
   background-color: white;
 
   pointer-events: none;
-
 }
 
 .dropdown__content div {

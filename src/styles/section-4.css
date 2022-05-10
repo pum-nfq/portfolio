@@ -21,6 +21,7 @@
 }
 
 .section-4__title-job {
+  transition: ease 300ms;
     font-size: 30px;
 }
 

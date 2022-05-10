@@ -39,11 +39,14 @@
 }
 
 .section-2__side:first-child .content {
+  transition: ease 300ms;
   font-size: 24px;
   font-family: var(--secondary-font);
 }
 
 .section-2__side:last-child .content {
+  transition: ease 300ms;
+
   font-size: 72px;
   font-family: var(--secondary-font);
 }
@@ -59,7 +62,7 @@
 
 .section-2__center__wrapper {
   width: 65%;
-  height: 80%;
+  height: 85%;
   border: 2px solid #999;
   border-radius: 500px;
 
@@ -85,6 +88,7 @@
 }
 
 .section-2__center__footer img {
+  width: 130px;
   opacity: 0.5;
   cursor: pointer;
   transition: ease 200ms;
