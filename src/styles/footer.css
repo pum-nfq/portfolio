@@ -16,6 +16,11 @@
   color: orangered;
   font-weight: 600;
   text-decoration: none;
+  transition: ease 300ms;
+}
+
+.footer a:hover {
+  transform: translateY(-3px);
 }
 
 .footer div {
@@ -36,6 +41,5 @@
 
 .footer i:hover {
   color: orangered;
-
   transform: translateY(-3px);
 }
