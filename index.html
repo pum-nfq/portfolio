@@ -11,6 +11,8 @@
       href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
     />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./src/styles/navbar.css" />
@@ -93,7 +95,11 @@
         </div>
       </section>
       <section class="navbar__item">
-        <img src="./src/assets/logo-center-dark.png" alt="logo-center-dark" />
+        <img
+          src="./src/assets/logo-center-dark.png"
+          alt="logo-center-dark"
+          height="70px"
+        />
       </section>
       <section class="navbar__item">
         <i class="fab fa-facebook-f"></i>
@@ -105,7 +111,14 @@
     <!-- <- Navigation header -->
 
     <!-- Section 1 -> -->
-    <section class="section-1">
+
+    <section
+      class="section-1"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-offset="200"
+      data-aos-easing="ease-in-sine"
+    >
       <p class="section-1__title">Khoa Duong</p>
       <p class="section-1__title">Developer Front-end & UI/UX</p>
       <p class="section-1__title">Based in Viet Nam</p>
@@ -115,29 +128,62 @@
     <!-- Section 2 -> -->
     <section class="section-2">
       <div class="section-2__side">
-        <section class="section-2__side__content">
-          <p class="title">BIOGRAPHY</p>
-          <p class="content">
-            Work for money and design for love! I’m Bruno, an UI/UX Interaction
-            Designer based in Poland.
-          </p>
-        </section>
-        <section class="section-2__side__content">
-          <p class="title">CONTACT</p>
-          <p class="content">
-            Warsaw, Poland hello@brunoerdison.com +68 3568 89 86
-          </p>
-        </section>
-        <section class="section-2__side__content">
-          <p class="title">SERVICES</p>
-          <p class="content">Design Mobile Application Design Animation</p>
-        </section>
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+        >
+          <section class="section-2__side__content">
+            <p class="title">BIOGRAPHY</p>
+            <p class="content">
+              Work for money and design for love! I'm Bruno, an UI/UX
+              Interaction Designer based in Poland.
+            </p>
+          </section>
+        </div>
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+        >
+          <section class="section-2__side__content">
+            <p class="title">CONTACT</p>
+            <p class="content">
+              Warsaw, Poland hello@brunoerdison.com +68 3568 89 86
+            </p>
+          </section>
+        </div>
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+        >
+          <section class="section-2__side__content">
+            <p class="title">SERVICES</p>
+            <p class="content">Design Mobile Application Design Animation</p>
+          </section>
+        </div>
       </div>
-      <div class="section-2__center">
+      <div
+        class="section-2__center"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+      >
         <div class="section-2__center__wrapper">
           <img src="./src/assets/avatar.jpg" alt="avatar" />
         </div>
-        <div class="section-2__center__footer">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          class="section-2__center__footer"
+        >
           <img src="./src/assets/logo-section-2.png" alt="logo-section-2" />
           <img src="./src/assets/logo-section-2.1.png" alt="logo-section-2" />
           <img src="./src/assets/logo-section-2.2.png" alt="logo-section-2" />
@@ -146,30 +192,76 @@
         </div>
       </div>
       <div class="section-2__side">
-        <section class="section-2__side__content">
-          <p class="title">YEARS OF EXPERIENCE</p>
-          <p class="content">3</p>
-        </section>
-        <section class="section-2__side__content">
-          <p class="title">SATISFITATION CLIENTS</p>
-          <p class="content">100%</p>
-        </section>
-        <section class="section-2__side__content">
-          <p class="title">CLIENTS ON WORLWIDE</p>
-          <p class="content">+80</p>
-        </section>
-        <section class="section-2__side__content">
-          <p class="title">PROJECTS DONE</p>
-          <p class="content">12</p>
-        </section>
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+        >
+          <section class="section-2__side__content">
+            <p class="title">YEARS OF EXPERIENCE</p>
+            <p class="content">3</p>
+          </section>
+        </div>
+
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+        >
+          <section class="section-2__side__content">
+            <p class="title">SATISFITATION CLIENTS</p>
+            <p class="content">100%</p>
+          </section>
+        </div>
+
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+        >
+          <section class="section-2__side__content">
+            <p class="title">CLIENTS ON WORLWIDE</p>
+            <p class="content">+80</p>
+          </section>
+        </div>
+
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+        >
+          <section class="section-2__side__content">
+            <p class="title">PROJECTS DONE</p>
+            <p class="content">12</p>
+          </section>
+        </div>
       </div>
     </section>
+
     <!-- <- Section 2 -->
 
     <!-- Section 3 -> -->
     <section class="section">
-      <h2 class="section-title">My Advantage</h2>
-      <div class="section-content">
+      <h2
+        class="section-title"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+      >
+        My Advantage
+      </h2>
+      <div
+        class="section-content"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+      >
         <div class="section-3__content__item">
           <div class="section-3__content__img-wrapper">
             <img src="./src/assets/logo-section-3.png" alt="item" />
@@ -218,8 +310,22 @@
 
     <!-- Section 4 -> -->
     <section class="section">
-      <h2 class="section-title">Education & Experience</h2>
-      <div class="section-content">
+      <h2
+        class="section-title"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+      >
+        Education & Experience
+      </h2>
+      <div
+        class="section-content"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+      >
         <table class="section-4__table">
           <thead class="section-4__thead">
             <th><p>2018</p></th>
@@ -261,8 +367,22 @@
 
     <!-- Section 5 -> -->
     <section class="section">
-      <h2 class="section-title">My Latest Projects</h2>
-      <div class="section-content">
+      <h2
+        class="section-title"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+      >
+        My Latest Projects
+      </h2>
+      <div
+        class="section-content"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+      >
         <div class="section-5__item">
           <img src="./src/assets/logo-section-5.png" alt="Kanso" />
           <div>
@@ -299,14 +419,12 @@
     <!-- Footer -> -->
     <footer class="section footer">
       <p>© 2021 NFQ Asia. All Rights Reserved.</p>
-      <a href="#">dangkhoa.duong@nfq.asia</a>
-      <div>
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-facebook-messenger"></i>
-        <i class="fab fa-github"></i>
-        <i class="fab fa-twitter"></i>
-      </div>
     </footer>
     <!-- <- Footer -->
   </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
