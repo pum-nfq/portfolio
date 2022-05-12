@@ -89,11 +89,5 @@
 
 .section-2__center__footer img {
   width: 130px;
-  opacity: 0.5;
   cursor: pointer;
-  transition: ease 200ms;
-}
-
-.section-2__center__footer img:hover {
-  opacity: 1;
 }

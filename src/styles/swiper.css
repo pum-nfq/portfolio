@@ -1,7 +1,7 @@
 .swiper {
   width: 100%;
-  height: 500px;
-  padding: 3rem 0;
+  height: fit-content;
+  padding: 5rem 0;
 }
 
 .swiper-wrapper {
@@ -61,4 +61,5 @@
 
 .speaker a {
   text-decoration: none;
+  color: orangered;
 }

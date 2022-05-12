@@ -5,14 +5,16 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  align-items: center;
 }
 
 .section-5__item img {
-  max-width: 100%;
+  max-width: 400px;
   height: 400px;
-  /* object-fit: cover; */
+  object-fit: cover;
   transition: ease 600ms;
   filter: grayscale(100%);
+  border-radius: 50%;
 }
 
 .section-5__item:hover img {
@@ -28,6 +30,7 @@
   font-size: 16px;
   color: #666;
   font-family: var(--primary-font);
+  text-align: center;
 }
 
 .section-5__item h2 {
@@ -36,4 +39,5 @@
   font-family: var(--primary-font);
   font-weight: 200;
   transition: ease 600ms;
+  text-align: center;
 }

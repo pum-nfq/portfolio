@@ -1,0 +1,151 @@
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .wrapper {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .navbar__item:nth-child(2) {
+    display: none;
+  }
+
+  .navbar__item:nth-child(3) img {
+    height: 50px;
+  }
+
+  .navbar__item:nth-child(4) {
+    display: none;
+  }
+  .navbar__item:nth-child(3) {
+    justify-content: flex-end;
+  }
+
+  .menu {
+    width: 50%;
+    display: inline-block;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu i {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .section-1__title {
+    width: 100%;
+    font-size: 3rem;
+  }
+
+  .section-2 {
+    margin-top: 2rem;
+    height: 720px;
+    padding-bottom: 1rem;
+  }
+
+  .section-2__side {
+    gap: 50px;
+  }
+  .section-2__side__content {
+    gap: 1rem;
+  }
+
+  .section-2__center {
+    height: 100%;
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+
+  .section-2__center__wrapper {
+    width: 70%;
+    height: 75%;
+  }
+
+  .section-2__center__footer img {
+    width: 70px;
+  }
+
+  .section-2__side:first-child .content {
+    font-size: 14px;
+  }
+
+  .section-2__side:last-child .content {
+    font-size: 40px;
+  }
+
+  .section-2__side .title {
+    font-size: 10px;
+  }
+
+  .section-3__content__img-wrapper img {
+    width: 65px;
+  }
+
+  .section-3__content__img-wrapper p {
+    font-size: 1.5rem;
+  }
+
+  .section-3__content__img-wrapper {
+    height: 230px;
+  }
+
+  .section-4__title-job {
+    font-size: 20px;
+  }
+
+  .section-5__item img {
+    max-width: 200px;
+    height: 200px;
+  }
+
+  .section-5__item {
+    height: fit-content;
+    justify-content: start;
+    gap: 2rem;
+  }
+  .section-5__item h2 {
+    font-size: 16px;
+  }
+  .section-5__item p {
+    font-size: 12px;
+  }
+
+  .speak {
+    font-size: 24px;
+  }
+  .speaker {
+    margin-top: 3rem;
+  }
+  .speaker p:first-child {
+    font-size: 1rem;
+  }
+
+  .swiper {
+    padding: 3rem 0;
+  }
+
+  .call-me-ctn {
+    margin-top: 1rem;
+  }
+
+  .call-me {
+    width: 300px;
+    height: 300px;
+  }
+
+  .call-me a {
+    font-size: 72px;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 3rem 0;
+  }
+}

@@ -23,576 +23,579 @@
     <link rel="stylesheet" href="./src/styles/section-4.css" />
     <link rel="stylesheet" href="./src/styles/section-5.css" />
     <link rel="stylesheet" href="./src/styles/footer.css" />
-    <link rel="stylesheet" href="./src/styles/responsives.css" />
     <link rel="stylesheet" href="./src/styles/drawer.css" />
     <link rel="stylesheet" href="./src/styles/swiper.css" />
     <link rel="stylesheet" href="./src/styles/callme.css" />
-
+    <link rel="stylesheet" href="./src/styles/responsive-768x1024.css" />
+    <link rel="stylesheet" href="./src/styles/responsive-375x667.css" />
     <title>Portfolio</title>
   </head>
   <body>
-    <!-- Drawer Sidenav -> -->
-    <div class="drawer" id="drawer">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-    </div>
-    <!-- <- Drawer Sidenav -->
-
-    <!-- Navigation header -> -->
-    <nav class="navbar">
-      <section class="menu">
-        <i class="fa-solid fa-bars"></i>
-      </section>
-      <section class="navbar__item">
-        <!-- Dropdown -->
-        <div class="dropdown">
-          <a href="#" class="navbar__item--active">HOME</a>
-          <div class="dropdown__content">
-            <div>
-              <a href="#" class="dropdown__content__item">Home Default</a>
-              <a href="#" class="dropdown__content__item">Home Studio</a>
-              <a href="#" class="dropdown__content__item">Home Agency</a>
-              <a href="#" class="dropdown__content__item">Home Minimal</a>
-              <a href="#" class="dropdown__content__item">Home Dark</a>
-            </div>
-            <div>
-              <a href="#" class="dropdown__content__item">Home Parallax</a>
-              <a href="#" class="dropdown__content__item">Home Freelancer</a>
-              <a href="#" class="dropdown__content__item">Home Vertical</a>
-              <a href="#" class="dropdown__content__item">Home Trending</a>
-              <a href="#" class="dropdown__content__item">Home Modern</a>
-            </div>
-          </div>
-        </div>
-        <div class="dropdown">
-          <a href="#">PORTFOLIO</a>
-          <div class="dropdown__content">
-            <div>
-              <a href="#" class="dropdown__content__item">Works Grid</a>
-              <a href="#" class="dropdown__content__item">Works Masony</a>
-              <a href="#" class="dropdown__content__item">Works Listing</a>
-              <a href="#" class="dropdown__content__item">Works Carousel</a>
-              <a href="#" class="dropdown__content__item">Works Showcase 1</a>
-              <a href="#" class="dropdown__content__item">Works Showcase 2</a>
-            </div>
-          </div>
-        </div>
-        <div class="dropdown">
-          <a href="#">BLOG</a>
-          <div class="dropdown__content">
-            <div>
-              <a href="#" class="dropdown__content__item">Blog Grid</a>
-              <a href="#" class="dropdown__content__item">Blog Masony</a>
-              <a href="#" class="dropdown__content__item">Blog Sidebar</a>
-              <a href="#" class="dropdown__content__item">Blog Post</a>
-              <a href="#" class="dropdown__content__item">Blog Post Sidebar</a>
-            </div>
-          </div>
-        </div>
-        <div class="dropdown">
-          <a href="#">PAGE</a>
-          <div class="dropdown__content">
-            <div>
-              <a href="#" class="dropdown__content__item">About Us</a>
-              <a href="#" class="dropdown__content__item">About Me</a>
-              <a href="#" class="dropdown__content__item">Services</a>
-              <a href="#" class="dropdown__content__item">Service Detail</a>
-              <a href="#" class="dropdown__content__item">Pricing</a>
-            </div>
-            <div>
-              <a href="#" class="dropdown__content__item">Team</a>
-              <a href="#" class="dropdown__content__item">FAQ</a>
-              <a href="#" class="dropdown__content__item">Contact</a>
-              <a href="#" class="dropdown__content__item">Page 404</a>
-              <a href="#" class="dropdown__content__item">Coming Soon</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="navbar__item">
-        <img
-          src="./src/assets/logo-center-dark.png"
-          alt="logo-center-dark"
-          height="70px"
-        />
-      </section>
-      <section class="navbar__item">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-facebook-messenger"></i>
-        <i class="fab fa-github"></i>
-        <i class="fab fa-twitter"></i>
-      </section>
-    </nav>
-    <!-- <- Navigation header -->
-
-    <!-- Section 1 -> -->
-
-    <section
-      class="section-1"
-      data-aos="fade-up"
-      data-aos-duration="1000"
-      data-aos-offset="200"
-      data-aos-easing="ease-in-sine"
-    >
-      <p class="section-1__title">Khoa Duong</p>
-      <p class="section-1__title">Developer Front-end & UI/UX</p>
-      <p class="section-1__title">Based in Viet Nam</p>
-    </section>
-    <!-- <- Section 1 -->
-
-    <!-- Section 2 -> -->
-    <section class="section-2">
-      <div class="section-2__side">
-        <div
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
+    <div class="wrapper">
+      <!-- Drawer Sidenav -> -->
+      <div class="drawer" id="drawer">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
         >
-          <section class="section-2__side__content">
-            <p class="title">BIOGRAPHY</p>
-            <p class="content">
-              Work for money and design for love! I'm Bruno, an UI/UX
-              Interaction Designer based in Poland.
-            </p>
-          </section>
-        </div>
-        <div
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-        >
-          <section class="section-2__side__content">
-            <p class="title">CONTACT</p>
-            <p class="content">
-              Warsaw, Poland hello@brunoerdison.com +68 3568 89 86
-            </p>
-          </section>
-        </div>
-        <div
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-        >
-          <section class="section-2__side__content">
-            <p class="title">SERVICES</p>
-            <p class="content">Design Mobile Application Design Animation</p>
-          </section>
-        </div>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
       </div>
-      <div
-        class="section-2__center"
+      <!-- <- Drawer Sidenav -->
+
+      <!-- Navigation header -> -->
+      <nav class="navbar">
+        <section class="menu">
+          <i class="fa-solid fa-bars" onclick="openNav()"></i>
+        </section>
+        <section class="navbar__item">
+          <!-- Dropdown -->
+          <div class="dropdown">
+            <a href="#" class="navbar__item--active">HOME</a>
+            <div class="dropdown__content">
+              <div>
+                <a href="#" class="dropdown__content__item">Home Default</a>
+                <a href="#" class="dropdown__content__item">Home Studio</a>
+                <a href="#" class="dropdown__content__item">Home Agency</a>
+                <a href="#" class="dropdown__content__item">Home Minimal</a>
+                <a href="#" class="dropdown__content__item">Home Dark</a>
+              </div>
+              <div>
+                <a href="#" class="dropdown__content__item">Home Parallax</a>
+                <a href="#" class="dropdown__content__item">Home Freelancer</a>
+                <a href="#" class="dropdown__content__item">Home Vertical</a>
+                <a href="#" class="dropdown__content__item">Home Trending</a>
+                <a href="#" class="dropdown__content__item">Home Modern</a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#">PORTFOLIO</a>
+            <div class="dropdown__content">
+              <div>
+                <a href="#" class="dropdown__content__item">Works Grid</a>
+                <a href="#" class="dropdown__content__item">Works Masony</a>
+                <a href="#" class="dropdown__content__item">Works Listing</a>
+                <a href="#" class="dropdown__content__item">Works Carousel</a>
+                <a href="#" class="dropdown__content__item">Works Showcase 1</a>
+                <a href="#" class="dropdown__content__item">Works Showcase 2</a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#">BLOG</a>
+            <div class="dropdown__content">
+              <div>
+                <a href="#" class="dropdown__content__item">Blog Grid</a>
+                <a href="#" class="dropdown__content__item">Blog Masony</a>
+                <a href="#" class="dropdown__content__item">Blog Sidebar</a>
+                <a href="#" class="dropdown__content__item">Blog Post</a>
+                <a href="#" class="dropdown__content__item"
+                  >Blog Post Sidebar</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#">PAGE</a>
+            <div class="dropdown__content">
+              <div>
+                <a href="#" class="dropdown__content__item">About Us</a>
+                <a href="#" class="dropdown__content__item">About Me</a>
+                <a href="#" class="dropdown__content__item">Services</a>
+                <a href="#" class="dropdown__content__item">Service Detail</a>
+                <a href="#" class="dropdown__content__item">Pricing</a>
+              </div>
+              <div>
+                <a href="#" class="dropdown__content__item">Team</a>
+                <a href="#" class="dropdown__content__item">FAQ</a>
+                <a href="#" class="dropdown__content__item">Contact</a>
+                <a href="#" class="dropdown__content__item">Page 404</a>
+                <a href="#" class="dropdown__content__item">Coming Soon</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="navbar__item">
+          <img
+            src="./src/assets/logo-center-dark.png"
+            alt="logo-center-dark"
+            height="70px"
+          />
+        </section>
+        <section class="navbar__item">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-facebook-messenger"></i>
+          <i class="fab fa-github"></i>
+          <i class="fab fa-twitter"></i>
+        </section>
+      </nav>
+      <!-- <- Navigation header -->
+
+      <!-- Section 1 -> -->
+
+      <section
+        class="section-1"
         data-aos="fade-up"
         data-aos-duration="1000"
         data-aos-offset="200"
         data-aos-easing="ease-in-sine"
       >
-        <div class="section-2__center__wrapper">
-          <img src="./src/assets/avatar.jpg" alt="avatar" />
+        <p class="section-1__title">Khoa Duong</p>
+        <p class="section-1__title">Developer Front-end & UI/UX</p>
+        <p class="section-1__title">Based in Viet Nam</p>
+      </section>
+      <!-- <- Section 1 -->
+
+      <!-- Section 2 -> -->
+      <section class="section-2">
+        <div class="section-2__side">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+          >
+            <section class="section-2__side__content">
+              <p class="title">BIOGRAPHY</p>
+              <p class="content">
+                Work for money and programming for love! I'm Khoa, a developer
+                Front-end based in Viet Nam.
+              </p>
+            </section>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+          >
+            <section class="section-2__side__content">
+              <p class="title">CONTACT</p>
+              <p class="content" sytle="width:50px">
+                Can Tho, Viet Nam dangkhoa.duong@nfq.asia 0833 495 422
+              </p>
+            </section>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+          >
+            <section class="section-2__side__content">
+              <p class="title">SERVICES</p>
+              <p class="content">
+                Develop Website with good performance and animation
+              </p>
+            </section>
+          </div>
         </div>
-        <div class="section-2__center__footer">
-          <img
-            src="./src/assets/logo-section-2.png"
-            alt="logo-section-2"
+        <div
+          class="section-2__center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+        >
+          <div class="section-2__center__wrapper">
+            <img src="./src/assets/avatar.jpg" alt="avatar" />
+          </div>
+          <div class="section-2__center__footer">
+            <img
+              src="./src/assets/logo-section-2.png"
+              alt="logo-section-2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-offset="100"
+              data-aos-easing="ease-in-sine"
+              data-aos-delay="50"
+            />
+            <img
+              src="./src/assets/logo-section-2.1.png"
+              alt="logo-section-2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-offset="100"
+              data-aos-easing="ease-in-sine"
+              data-aos-delay="150"
+            />
+            <img
+              src="./src/assets/logo-section-2.2.png"
+              alt="logo-section-2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-offset="100"
+              data-aos-easing="ease-in-sine"
+              data-aos-delay="250"
+            />
+            <img
+              src="./src/assets/logo-section-2.3.png"
+              alt="logo-section-2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-offset="100"
+              data-aos-easing="ease-in-sine"
+              data-aos-delay="350"
+            />
+            <img
+              src="./src/assets/logo-section-2.4.png"
+              alt="logo-section-2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-offset="100"
+              data-aos-easing="ease-in-sine"
+              data-aos-delay="450"
+            />
+          </div>
+        </div>
+        <div class="section-2__side">
+          <section
+            class="section-2__side__content"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+          >
+            <p class="title">YEARS OF EXPERIENCE</p>
+            <p class="content">3</p>
+          </section>
+
+          <section
+            class="section-2__side__content"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+          >
+            <p class="title">SATISFITATION CLIENTS</p>
+            <p class="content">100%</p>
+          </section>
+
+          <section
+            class="section-2__side__content"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+          >
+            <p class="title">PROJECTS DONE</p>
+            <p class="content">12</p>
+          </section>
+        </div>
+      </section>
+
+      <!-- <- Section 2 -->
+
+      <!-- Section 3 -> -->
+      <section class="section">
+        <h2
+          class="section-title"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+        >
+          My Advantage
+        </h2>
+        <div class="section-content">
+          <div
+            class="section-3__content__item"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-offset="100"
             data-aos-easing="ease-in-sine"
             data-aos-delay="50"
-          />
-          <img
-            src="./src/assets/logo-section-2.1.png"
-            alt="logo-section-2"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-offset="100"
-            data-aos-easing="ease-in-sine"
-            data-aos-delay="150"
-          />
-          <img
-            src="./src/assets/logo-section-2.2.png"
-            alt="logo-section-2"
+          >
+            <div class="section-3__content__img-wrapper">
+              <img src="./src/assets/logo-section-3.png" alt="item" />
+              <p>95%</p>
+            </div>
+            <p>Javascript</p>
+          </div>
+          <div
+            class="section-3__content__item"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-offset="100"
             data-aos-easing="ease-in-sine"
             data-aos-delay="250"
-          />
-          <img
-            src="./src/assets/logo-section-2.3.png"
-            alt="logo-section-2"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-offset="100"
-            data-aos-easing="ease-in-sine"
-            data-aos-delay="350"
-          />
-          <img
-            src="./src/assets/logo-section-2.4.png"
-            alt="logo-section-2"
+          >
+            <div class="section-3__content__img-wrapper">
+              <img src="./src/assets/logo-section-3.1.png" alt="item" />
+              <p>90%</p>
+            </div>
+            <p>React</p>
+          </div>
+          <div
+            class="section-3__content__item"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-offset="100"
             data-aos-easing="ease-in-sine"
             data-aos-delay="450"
-          />
-        </div>
-      </div>
-      <div class="section-2__side">
-        <section
-          class="section-2__side__content"
-          data-aos="fade-left"
-          data-aos-duration="1000"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-        >
-          <p class="title">YEARS OF EXPERIENCE</p>
-          <p class="content">3</p>
-        </section>
-
-        <section
-          class="section-2__side__content"
-          data-aos="fade-left"
-          data-aos-duration="1000"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-        >
-          <p class="title">SATISFITATION CLIENTS</p>
-          <p class="content">100%</p>
-        </section>
-
-        <section
-          class="section-2__side__content"
-          data-aos="fade-left"
-          data-aos-duration="1000"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-        >
-          <p class="title">PROJECTS DONE</p>
-          <p class="content">12</p>
-        </section>
-      </div>
-    </section>
-
-    <!-- <- Section 2 -->
-
-    <!-- Section 3 -> -->
-    <section class="section">
-      <h2
-        class="section-title"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-offset="200"
-        data-aos-easing="ease-in-sine"
-      >
-        My Advantage
-      </h2>
-      <div class="section-content">
-        <div
-          class="section-3__content__item"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-offset="100"
-          data-aos-easing="ease-in-sine"
-          data-aos-delay="50"
-        >
-          <div class="section-3__content__img-wrapper">
-            <img src="./src/assets/logo-section-3.png" alt="item" />
-            <p>95%</p>
-          </div>
-          <p>Javascript</p>
-        </div>
-        <div
-          class="section-3__content__item"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-offset="100"
-          data-aos-easing="ease-in-sine"
-          data-aos-delay="250"
-        >
-          <div class="section-3__content__img-wrapper">
-            <img src="./src/assets/logo-section-3.1.png" alt="item" />
-            <p>90%</p>
-          </div>
-          <p>React</p>
-        </div>
-        <div
-          class="section-3__content__item"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-offset="100"
-          data-aos-easing="ease-in-sine"
-          data-aos-delay="450"
-        >
-          <div class="section-3__content__img-wrapper">
-            <img src="./src/assets/logo-section-3.2.png" alt="item" />
-            <p>82%</p>
-          </div>
-          <p>Ant Design</p>
-        </div>
-        <div
-          class="section-3__content__item"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-offset="100"
-          data-aos-easing="ease-in-sine"
-          data-aos-delay="650"
-        >
-          <div class="section-3__content__img-wrapper">
-            <img src="./src/assets/logo-section-3.3.png" alt="item" />
-            <p>93%</p>
-          </div>
-          <p>Redux</p>
-        </div>
-        <div
-          class="section-3__content__item"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-offset="100"
-          data-aos-easing="ease-in-sine"
-          data-aos-delay="850"
-        >
-          <div class="section-3__content__img-wrapper">
-            <img src="./src/assets/logo-section-3.4.png" alt="item" />
-            <p>76%</p>
-          </div>
-          <p>Bootstrap</p>
-        </div>
-        <div
-          class="section-3__content__item"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-offset="100"
-          data-aos-easing="ease-in-sine"
-          data-aos-delay="1050"
-        >
-          <div class="section-3__content__img-wrapper">
-            <img src="./src/assets/logo-section-3.5.png" alt="item" />
-            <p>88%</p>
-          </div>
-          <p>HTML5/CSS</p>
-        </div>
-      </div>
-    </section>
-    <!-- <- Section 3 -->
-
-    <!-- Section 4 -> -->
-    <section class="section">
-      <h2
-        class="section-title"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-offset="200"
-        data-aos-easing="ease-in-sine"
-      >
-        Education & Experience
-      </h2>
-      <div class="section-content">
-        <table class="section-4__table">
-          <thead class="section-4__thead">
-            <th
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-              data-aos-offset="200"
-              data-aos-easing="ease-in-sine"
-              data-aos-delay="50"
-            >
-              <p>2018</p>
-            </th>
-            <th
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-              data-aos-offset="200"
-              data-aos-easing="ease-in-sine"
-              data-aos-delay="450"
-            >
-              <p>2019 - 2021</p>
-            </th>
-            <th
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-              data-aos-offset="200"
-              data-aos-easing="ease-in-sine"
-              data-aos-delay="1050"
-            >
-              <p>Current</p>
-            </th>
-          </thead>
-          <tbody class="section-4__tbody">
-            <tr>
-              <td
-                data-aos="zoom-in"
-                data-aos-duration="1000"
-                data-aos-offset="200"
-                data-aos-easing="ease-in-sine"
-                data-aos-delay="250"
-              >
-                <p class="section-4__title-job">
-                  Information Technology student
-                </p>
-                <p class="section-4__workplace">Can Tho University</p>
-              </td>
-              <td
-                data-aos="zoom-in"
-                data-aos-duration="1000"
-                data-aos-offset="200"
-                data-aos-easing="ease-in-sine"
-                data-aos-delay="650"
-              >
-                <p class="section-4__title-job">Front-end Internship</p>
-                <p class="section-4__workplace">AppCore . Co., Ltd</p>
-              </td>
-              <td
-                data-aos="zoom-in"
-                data-aos-duration="1000"
-                data-aos-offset="200"
-                data-aos-easing="ease-in-sine"
-                data-aos-delay="1250"
-              >
-                <p class="section-4__title-job">Fresher Front-end Developer</p>
-                <p class="section-4__workplace">NFQ ASIA Co., Ltd</p>
-              </td>
-            </tr>
-            <tr>
-              <td></td>
-              <td
-                data-aos="zoom-in"
-                data-aos-duration="1000"
-                data-aos-offset="200"
-                data-aos-easing="ease-in-sine"
-                data-aos-delay="850"
-              >
-                <p class="section-4__title-job">
-                  Faculty-level scientific research
-                </p>
-                <p class="section-4__workplace">Can Tho University</p>
-              </td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-    <!-- <- Section 4 -->
-
-    <!-- Section 5 -> -->
-    <section class="section">
-      <h2
-        class="section-title"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-offset="200"
-        data-aos-easing="ease-in-sine"
-      >
-        My Latest Projects
-      </h2>
-      <div
-        class="section-content"
-        data-aos="zoom-in"
-        data-aos-duration="1000"
-        data-aos-offset="200"
-        data-aos-easing="ease-in-sine"
-        data-aos-delay="200"
-      >
-        <div class="section-5__item">
-          <img src="./src/assets/logo-section-5.png" alt="Kanso" />
-          <div>
-            <p>Website</p>
-            <h2>Project Management Kanso</h2>
-          </div>
-        </div>
-        <div class="section-5__item">
-          <img src="./src/assets/logo-section-5.1.png" alt="Kanso" />
-          <div>
-            <p>Website</p>
-            <h2>Chat realtime application</h2>
-          </div>
-        </div>
-        <div class="section-5__item">
-          <img src="./src/assets/logo-section-5.2.png" alt="Kanso" />
-          <div>
-            <p>Website</p>
-            <h2>HBO Max - Movie Web</h2>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- <- Section 5 -->
-
-    <!-- Section 6 -> -->
-    <section class="section">
-      <section class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <p class="speak">
-              “Khoa was a real pleasure to work with and we look forward to
-              working with him again. He’s definitely the kind of designer you
-              can trust with a project from start to finish. Great services &
-              Recommended!”
-            </p>
-            <div class="speaker">
-              <p>Binh Tran</p>
-              <p>Mentor unlock 2 at <a href="#">NFQ Asia</a></p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <p class="speak">
-              “Khoa was a real pleasure to work with and we look forward to
-              working with him again. He’s definitely the kind of designer you
-              can trust with a project from start to finish. Great services &
-              Recommended!”
-            </p>
-            <div class="speaker">
-              <p>Binh Tran</p>
-              <p>Mentor unlock 2 at <a href="#">NFQ Asia</a></p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <p class="speak">
-              “Khoa was a real pleasure to work with and we look forward to
-              working with him again. He’s definitely the kind of designer you
-              can trust with a project from start to finish. Great services &
-              Recommended!”
-            </p>
-            <div class="speaker">
-              <p>Binh Tran</p>
-              <p>Mentor unlock 2 at <a href="#">NFQ Asia</a></p>
-            </div>
-          </div>
-        </div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </section>
-      <section class="call-me-ctn">
-        <div class="call-me">
-          <a href="#"
-            >Dang <br />
-            Khoa</a
           >
+            <div class="section-3__content__img-wrapper">
+              <img src="./src/assets/logo-section-3.2.png" alt="item" />
+              <p>82%</p>
+            </div>
+            <p>Ant Design</p>
+          </div>
+          <div
+            class="section-3__content__item"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="650"
+          >
+            <div class="section-3__content__img-wrapper">
+              <img src="./src/assets/logo-section-3.3.png" alt="item" />
+              <p>93%</p>
+            </div>
+            <p>Redux</p>
+          </div>
+          <div
+            class="section-3__content__item"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="850"
+          >
+            <div class="section-3__content__img-wrapper">
+              <img src="./src/assets/logo-section-3.4.png" alt="item" />
+              <p>76%</p>
+            </div>
+            <p>Bootstrap</p>
+          </div>
+          <div
+            class="section-3__content__item"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="1050"
+          >
+            <div class="section-3__content__img-wrapper">
+              <img src="./src/assets/logo-section-3.5.png" alt="item" />
+              <p>88%</p>
+            </div>
+            <p>HTML5/CSS</p>
+          </div>
         </div>
       </section>
-    </section>
+      <!-- <- Section 3 -->
 
-    <!-- <- Section 6 -->
+      <!-- Section 4 -> -->
+      <section class="section">
+        <h2
+          class="section-title"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+        >
+          Education & Experience
+        </h2>
+        <div class="section-content">
+          <table class="section-4__table">
+            <thead class="section-4__thead">
+              <th
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-delay="50"
+              >
+                <p>2018</p>
+              </th>
+              <th
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-delay="450"
+              >
+                <p>2019 - 2021</p>
+              </th>
+              <th
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-delay="1050"
+              >
+                <p>Current</p>
+              </th>
+            </thead>
+            <tbody class="section-4__tbody">
+              <tr>
+                <td
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-offset="200"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="250"
+                >
+                  <p class="section-4__title-job">
+                    Information Technology student
+                  </p>
+                  <p class="section-4__workplace">Can Tho University</p>
+                </td>
+                <td
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-offset="200"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="650"
+                >
+                  <p class="section-4__title-job">Front-end Internship</p>
+                  <p class="section-4__workplace">AppCore . Co., Ltd</p>
+                </td>
+                <td
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-offset="200"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="1250"
+                >
+                  <p class="section-4__title-job">
+                    Fresher Front-end Developer
+                  </p>
+                  <p class="section-4__workplace">NFQ ASIA Co., Ltd</p>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  data-aos-offset="200"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="850"
+                >
+                  <p class="section-4__title-job">
+                    Faculty-level scientific research
+                  </p>
+                  <p class="section-4__workplace">Can Tho University</p>
+                </td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- <- Section 4 -->
 
-    <!-- Footer -> -->
-    <footer class="section footer">
-      <p>© 2022 NFQ Asia. All Rights Reserved.</p>
-    </footer>
-    <!-- <- Footer -->
+      <!-- Section 5 -> -->
+      <section class="section">
+        <h2
+          class="section-title"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+        >
+          My Latest Projects
+        </h2>
+        <div
+          class="section-content"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-delay="200"
+        >
+          <div class="section-5__item">
+            <img src="./src/assets/logo-section-5.png" alt="Kanso" />
+            <div>
+              <p>Website</p>
+              <h2>Project Management Kanso</h2>
+            </div>
+          </div>
+          <div class="section-5__item">
+            <img src="./src/assets/logo-section-5.1.png" alt="Kanso" />
+            <div>
+              <p>Website</p>
+              <h2>Chat realtime application</h2>
+            </div>
+          </div>
+          <div class="section-5__item">
+            <img src="./src/assets/logo-section-5.2.png" alt="Kanso" />
+            <div>
+              <p>Website</p>
+              <h2>HBO Max - Movie Web</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <- Section 5 -->
 
+      <!-- Section 6 -> -->
+      <section class="section">
+        <section class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <p class="speak">
+                “Khoa was a real pleasure to work with and we look forward to
+                working with him again. He’s definitely the kind of designer you
+                can trust with a project from start to finish. Great services &
+                Recommended!”
+              </p>
+              <div class="speaker">
+                <p>Binh Tran</p>
+                <p>Mentor unlock 2 at <a href="#">NFQ Asia</a></p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <p class="speak">
+                “Khoa was a real pleasure to work with and we look forward to
+                working with him again. He’s definitely the kind of designer you
+                can trust with a project from start to finish. Great services &
+                Recommended!”
+              </p>
+              <div class="speaker">
+                <p>Binh Tran</p>
+                <p>Mentor unlock 2 at <a href="#">NFQ Asia</a></p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <p class="speak">
+                “Khoa was a real pleasure to work with and we look forward to
+                working with him again. He’s definitely the kind of designer you
+                can trust with a project from start to finish. Great services &
+                Recommended!”
+              </p>
+              <div class="speaker">
+                <p>Binh Tran</p>
+                <p>Mentor unlock 2 at <a href="#">NFQ Asia</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </section>
+        <section class="call-me-ctn">
+          <div class="call-me">
+            <a href="#" text-hover="Call me">Call me</a>
+          </div>
+        </section>
+      </section>
+
+      <!-- <- Section 6 -->
+
+      <!-- Footer -> -->
+      <footer class="section footer">
+        <p>© 2022 NFQ Asia. All Rights Reserved.</p>
+      </footer>
+      <!-- <- Footer -->
+    </div>
     <!-- Carasoul library -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
@@ -627,11 +630,11 @@
     <!-- Navigation side -->
     <script>
       function openNav() {
-        document.getElementById('mySidenav').style.width = '100%';
+        document.getElementById('drawer').style.width = '100%';
       }
 
       function closeNav() {
-        document.getElementById('mySidenav').style.width = '0';
+        document.getElementById('drawer').style.width = '0';
       }
     </script>
   </body>

@@ -1,11 +1,9 @@
 .footer {
   width: 100%;
-
-  padding: 5rem 0 !important;
+  padding: 5rem 0;
 }
 
 .footer p {
   width: 100%;
   text-align: center;
 }
-
