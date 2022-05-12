@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- FontAwesome -->
+    <!-- AOS library (Animation onScroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Swiper.js Library (Carasoul) -->
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="./index.css" />
@@ -23,12 +24,31 @@
     <link rel="stylesheet" href="./src/styles/section-5.css" />
     <link rel="stylesheet" href="./src/styles/footer.css" />
     <link rel="stylesheet" href="./src/styles/responsives.css" />
+    <link rel="stylesheet" href="./src/styles/drawer.css" />
+    <link rel="stylesheet" href="./src/styles/swiper.css" />
+    <link rel="stylesheet" href="./src/styles/callme.css" />
 
     <title>Portfolio</title>
   </head>
   <body>
+    <!-- Drawer Sidenav -> -->
+    <div class="drawer" id="drawer">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+    <!-- <- Drawer Sidenav -->
+
     <!-- Navigation header -> -->
     <nav class="navbar">
+      <section class="menu">
+        <i class="fa-solid fa-bars"></i>
+      </section>
       <section class="navbar__item">
         <!-- Dropdown -->
         <div class="dropdown">
@@ -178,68 +198,87 @@
         <div class="section-2__center__wrapper">
           <img src="./src/assets/avatar.jpg" alt="avatar" />
         </div>
-        <div
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-offset="100"
-          data-aos-easing="ease-in-sine"
-          class="section-2__center__footer"
-        >
-          <img src="./src/assets/logo-section-2.png" alt="logo-section-2" />
-          <img src="./src/assets/logo-section-2.1.png" alt="logo-section-2" />
-          <img src="./src/assets/logo-section-2.2.png" alt="logo-section-2" />
-          <img src="./src/assets/logo-section-2.3.png" alt="logo-section-2" />
-          <img src="./src/assets/logo-section-2.4.png" alt="logo-section-2" />
+        <div class="section-2__center__footer">
+          <img
+            src="./src/assets/logo-section-2.png"
+            alt="logo-section-2"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="50"
+          />
+          <img
+            src="./src/assets/logo-section-2.1.png"
+            alt="logo-section-2"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="150"
+          />
+          <img
+            src="./src/assets/logo-section-2.2.png"
+            alt="logo-section-2"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="250"
+          />
+          <img
+            src="./src/assets/logo-section-2.3.png"
+            alt="logo-section-2"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="350"
+          />
+          <img
+            src="./src/assets/logo-section-2.4.png"
+            alt="logo-section-2"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="450"
+          />
         </div>
       </div>
       <div class="section-2__side">
-        <div
+        <section
+          class="section-2__side__content"
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-offset="200"
           data-aos-easing="ease-in-sine"
         >
-          <section class="section-2__side__content">
-            <p class="title">YEARS OF EXPERIENCE</p>
-            <p class="content">3</p>
-          </section>
-        </div>
+          <p class="title">YEARS OF EXPERIENCE</p>
+          <p class="content">3</p>
+        </section>
 
-        <div
+        <section
+          class="section-2__side__content"
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-offset="200"
           data-aos-easing="ease-in-sine"
         >
-          <section class="section-2__side__content">
-            <p class="title">SATISFITATION CLIENTS</p>
-            <p class="content">100%</p>
-          </section>
-        </div>
+          <p class="title">SATISFITATION CLIENTS</p>
+          <p class="content">100%</p>
+        </section>
 
-        <div
+        <section
+          class="section-2__side__content"
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-offset="200"
           data-aos-easing="ease-in-sine"
         >
-          <section class="section-2__side__content">
-            <p class="title">CLIENTS ON WORLWIDE</p>
-            <p class="content">+80</p>
-          </section>
-        </div>
-
-        <div
-          data-aos="fade-left"
-          data-aos-duration="1000"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-        >
-          <section class="section-2__side__content">
-            <p class="title">PROJECTS DONE</p>
-            <p class="content">12</p>
-          </section>
-        </div>
+          <p class="title">PROJECTS DONE</p>
+          <p class="content">12</p>
+        </section>
       </div>
     </section>
 
@@ -256,49 +295,85 @@
       >
         My Advantage
       </h2>
-      <div
-        class="section-content"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-offset="200"
-        data-aos-easing="ease-in-sine"
-      >
-        <div class="section-3__content__item">
+      <div class="section-content">
+        <div
+          class="section-3__content__item"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine"
+          data-aos-delay="50"
+        >
           <div class="section-3__content__img-wrapper">
             <img src="./src/assets/logo-section-3.png" alt="item" />
             <p>95%</p>
           </div>
           <p>Javascript</p>
         </div>
-        <div class="section-3__content__item">
+        <div
+          class="section-3__content__item"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine"
+          data-aos-delay="250"
+        >
           <div class="section-3__content__img-wrapper">
             <img src="./src/assets/logo-section-3.1.png" alt="item" />
             <p>90%</p>
           </div>
           <p>React</p>
         </div>
-        <div class="section-3__content__item">
+        <div
+          class="section-3__content__item"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine"
+          data-aos-delay="450"
+        >
           <div class="section-3__content__img-wrapper">
             <img src="./src/assets/logo-section-3.2.png" alt="item" />
             <p>82%</p>
           </div>
           <p>Ant Design</p>
         </div>
-        <div class="section-3__content__item">
+        <div
+          class="section-3__content__item"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine"
+          data-aos-delay="650"
+        >
           <div class="section-3__content__img-wrapper">
             <img src="./src/assets/logo-section-3.3.png" alt="item" />
             <p>93%</p>
           </div>
           <p>Redux</p>
         </div>
-        <div class="section-3__content__item">
+        <div
+          class="section-3__content__item"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine"
+          data-aos-delay="850"
+        >
           <div class="section-3__content__img-wrapper">
             <img src="./src/assets/logo-section-3.4.png" alt="item" />
             <p>76%</p>
           </div>
           <p>Bootstrap</p>
         </div>
-        <div class="section-3__content__item">
+        <div
+          class="section-3__content__item"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine"
+          data-aos-delay="1050"
+        >
           <div class="section-3__content__img-wrapper">
             <img src="./src/assets/logo-section-3.5.png" alt="item" />
             <p>88%</p>
@@ -320,39 +395,81 @@
       >
         Education & Experience
       </h2>
-      <div
-        class="section-content"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-offset="200"
-        data-aos-easing="ease-in-sine"
-      >
+      <div class="section-content">
         <table class="section-4__table">
           <thead class="section-4__thead">
-            <th><p>2018</p></th>
-            <th><p>2019 - 2021</p></th>
-            <th><p>Current</p></th>
+            <th
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              data-aos-delay="50"
+            >
+              <p>2018</p>
+            </th>
+            <th
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              data-aos-delay="450"
+            >
+              <p>2019 - 2021</p>
+            </th>
+            <th
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              data-aos-delay="1050"
+            >
+              <p>Current</p>
+            </th>
           </thead>
           <tbody class="section-4__tbody">
             <tr>
-              <td>
+              <td
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-delay="250"
+              >
                 <p class="section-4__title-job">
                   Information Technology student
                 </p>
                 <p class="section-4__workplace">Can Tho University</p>
               </td>
-              <td>
+              <td
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-delay="650"
+              >
                 <p class="section-4__title-job">Front-end Internship</p>
                 <p class="section-4__workplace">AppCore . Co., Ltd</p>
               </td>
-              <td>
+              <td
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-delay="1250"
+              >
                 <p class="section-4__title-job">Fresher Front-end Developer</p>
                 <p class="section-4__workplace">NFQ ASIA Co., Ltd</p>
               </td>
             </tr>
             <tr>
               <td></td>
-              <td>
+              <td
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-delay="850"
+              >
                 <p class="section-4__title-job">
                   Faculty-level scientific research
                 </p>
@@ -379,10 +496,11 @@
       </h2>
       <div
         class="section-content"
-        data-aos="fade-up"
+        data-aos="zoom-in"
         data-aos-duration="1000"
         data-aos-offset="200"
         data-aos-easing="ease-in-sine"
+        data-aos-delay="200"
       >
         <div class="section-5__item">
           <img src="./src/assets/logo-section-5.png" alt="Kanso" />
@@ -410,22 +528,112 @@
     <!-- <- Section 5 -->
 
     <!-- Section 6 -> -->
-    <section class="section"></section>
-    <!-- <- Section 6 -->
+    <section class="section">
+      <section class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <p class="speak">
+              “Khoa was a real pleasure to work with and we look forward to
+              working with him again. He’s definitely the kind of designer you
+              can trust with a project from start to finish. Great services &
+              Recommended!”
+            </p>
+            <div class="speaker">
+              <p>Binh Tran</p>
+              <p>Mentor unlock 2 at <a href="#">NFQ Asia</a></p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="speak">
+              “Khoa was a real pleasure to work with and we look forward to
+              working with him again. He’s definitely the kind of designer you
+              can trust with a project from start to finish. Great services &
+              Recommended!”
+            </p>
+            <div class="speaker">
+              <p>Binh Tran</p>
+              <p>Mentor unlock 2 at <a href="#">NFQ Asia</a></p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="speak">
+              “Khoa was a real pleasure to work with and we look forward to
+              working with him again. He’s definitely the kind of designer you
+              can trust with a project from start to finish. Great services &
+              Recommended!”
+            </p>
+            <div class="speaker">
+              <p>Binh Tran</p>
+              <p>Mentor unlock 2 at <a href="#">NFQ Asia</a></p>
+            </div>
+          </div>
+        </div>
 
-    <!-- Section 7 -> -->
-    <section class="section"></section>
-    <!-- <- Section 7 -->
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </section>
+      <section class="call-me-ctn">
+        <div class="call-me">
+          <a href="#"
+            >Dang <br />
+            Khoa</a
+          >
+          <i class="fas fa-external-link"></i>
+        </div>
+      </section>
+    </section>
+
+    <!-- <- Section 6 -->
 
     <!-- Footer -> -->
     <footer class="section footer">
       <p>© 2022 NFQ Asia. All Rights Reserved.</p>
     </footer>
     <!-- <- Footer -->
-  </body>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <!-- Carasoul library -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+        cssMode: true,
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+
+    <!-- <script src="./src/js/swiper.js"></script> -->
+    <!-- Animation onScroll library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- FontAwesome library -->
+    <script
+      src="https://kit.fontawesome.com/e16e31b173.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Navigation side -->
+    <script>
+      function openNav() {
+        document.getElementById('mySidenav').style.width = '100%';
+      }
+
+      function closeNav() {
+        document.getElementById('mySidenav').style.width = '0';
+      }
+    </script>
+  </body>
 </html>

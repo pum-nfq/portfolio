@@ -1,0 +1,38 @@
+.call-me-ctn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 5rem;
+}
+
+.call-me {
+  width: 500px;
+  height: 500px;
+
+  border: 2px dashed #222;
+  border-radius: 50%;
+
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.call-me a {
+  font-size: 92px;
+  text-decoration: none;
+  color: #111;
+  font-family: var(--secondary-font);
+  width: 100%;
+  text-align: center;
+}
+
+.call-me i {
+  font-size: 92px;
+  color: #111;
+  width: 100%;
+  padding-left: 80px;
+}

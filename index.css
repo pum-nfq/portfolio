@@ -12,28 +12,29 @@
 body {
   font-family: var(--primary-font);
   padding: 0 144px;
+  position: relative;
 }
 
 .section {
-    width: 100%;
-    height: fit-content;
-    padding-bottom: 7rem;
-    border-bottom: 1px solid #ccc;
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 7rem;
+  border-bottom: 1px solid #ccc;
 }
 
 .section-title {
-    font-family: var(--secondary-font);
-    font-size: 60px;
-    font-weight: 200;
-  
-    width: 100%;
-    text-align: center;
-    margin: 5rem 0;
+  font-family: var(--secondary-font);
+  font-size: 60px;
+  font-weight: 200;
+
+  width: 100%;
+  text-align: center;
+  margin: 5rem 0;
 }
 
 .section-content {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
