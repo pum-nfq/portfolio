@@ -75,3 +75,19 @@
     font-size: 14px;
   }
 }
+
+@media only screen and (max-width: 650px) {
+  .section-3__content__item {
+    gap: 1rem;
+  }
+  .section-3__content__item {
+    width: 140px;
+    height: fit-content;
+    padding: 0;
+  }
+  .section-3__content__item:nth-child(1),
+  .section-3__content__item:nth-child(2),
+  .section-3__content__item:nth-child(3) {
+    margin-bottom: 3rem;
+  }
+}

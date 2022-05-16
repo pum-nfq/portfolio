@@ -9,7 +9,6 @@
   align-items: center;
 }
 
-
 .section-1__title {
   width: 1200px;
   font-size: 5rem;
@@ -27,5 +26,11 @@
 @media only screen and (max-width: 818px) {
   .section-1__title {
     font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .section-1__title {
+    font-size: 30px;
   }
 }

@@ -113,7 +113,11 @@
   display: none;
 }
 
-
+@media only screen and (max-width: 1350px) {
+  .navbar__item:nth-child(2) {
+    gap: 5%;
+  }
+}
 
 @media only screen and (max-width: 1074px) {
   .navbar__item:nth-child(2) {

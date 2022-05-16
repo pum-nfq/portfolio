@@ -3,6 +3,10 @@
   font-family: var(--secondary-font);
 }
 
+.section-4-mobile__table {
+  display: none;
+}
+
 .section-4__table td {
   vertical-align: top;
   text-align: left;
@@ -56,5 +60,26 @@
 @media only screen and (max-width: 818px) {
   .section-4__title-job {
     font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .section-4__table {
+    display: none;
+  }
+
+  .section-4-mobile__table {
+    display: block;
+    width: 100%;
+  }
+  .section-4-mobile__table__year {
+    width: 40%;
+    height: 130px;
+  }
+  .section-4-mobile__table__item-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 130px;
   }
 }
