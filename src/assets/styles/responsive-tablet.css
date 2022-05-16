@@ -1,7 +1,12 @@
 @media only screen and (max-width: 768px) {
   .wrapper {
-    width: 100%;
-    padding: 0 3rem;
+    width: calc(768px - 100px);
+    margin: 0 auto;
+  }
+
+  .navbar {
+    height: fit-content;
+    padding-top: 2rem;
   }
 
   .navbar__item:nth-child(2) {
@@ -9,7 +14,7 @@
   }
 
   .navbar__item:nth-child(3) img {
-    height: 50px;
+    height: 30px;
   }
 
   .navbar__item:nth-child(4) {
@@ -28,7 +33,7 @@
   }
 
   .menu i {
-    font-size: 2rem;
+    font-size: 25px;
   }
 
   .drawer {
@@ -51,11 +56,12 @@
     padding-bottom: 1rem;
   }
 
-  .section-2__side {
-    gap: 50px;
-  }
   .section-2__side__content {
     gap: 1rem;
+  }
+
+  .section-2__side {
+    height: 65%;
   }
 
   .section-2__center {
@@ -74,11 +80,11 @@
   }
 
   .section-2__side:first-child .content {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .section-2__side:last-child .content {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .section-2__side .title {

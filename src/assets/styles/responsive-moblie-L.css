@@ -1,6 +1,110 @@
 @media only screen and (max-width: 425px) {
   .wrapper {
-    width: 100%;
-    padding: 0 3rem;
+    width: calc(425px - 50px);
+    margin: 0 auto;
   }
+
+  .section-1__title {
+    font-size: 26px;
+  }
+
+  .section-2 {
+    flex-direction: column;
+    height: fit-content;
+    padding-bottom: 3rem;
+  }
+  .section-2__side {
+    display: none;
+  }
+  .section-2__center {
+    width: 100%;
+    height: 650px;
+  }
+  .section-2__center__wrapper {
+    width: 100%;
+    height: 80%;
+  }
+  .section-2__center__footer img {
+    width: 50px;
+  }
+
+  .section-2-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section-2-mobile div {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .section-2-mobile section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .section-2-mobile__section-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .section-2-mobile div:last-child {
+    align-items: flex-end;
+  }
+
+  .section-2-mobile .title {
+    font-size: 10px;
+    font-family: var(--primary-font);
+    color: #999;
+  }
+
+  .section-2-mobile .content {
+    height: 80px;
+    font-size: 14px;
+    transition: ease 300ms;
+    font-family: var(--secondary-font);
+  }
+
+  .section-2-mobile__section-right .content {
+    font-size: 24px;
+  }
+
+  .section {
+    padding-bottom: 3rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+
+  .section-content {
+    flex-wrap: wrap;
+  }
+
+  .section-4__tbody td {
+    text-align: left;
+  }
+
+
+  .section-3__content__item {
+    width: 120px;
+    height: fit-content;
+    padding-bottom: 3rem;
+  }
+
+  .section-4__title-job {
+    font-size: 16px;
+  }
+
+  .section-4__workplace {
+    font-size: 12px;
+  }
+
 }
