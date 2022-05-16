@@ -133,5 +133,47 @@
   .section-2__center__footer img {
     width: 70px;
   }
+}
 
+@media only screen and (max-width: 818px) {
+  .section-2 {
+    margin-top: 2rem;
+    height: 600px;
+    padding-bottom: 1rem;
+  }
+
+  .section-2__side__content {
+    gap: 1rem;
+  }
+
+  .section-2__side {
+    height: 65%;
+  }
+
+  .section-2__center {
+    height: 100%;
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+
+  .section-2__center__wrapper {
+    width: 70%;
+    height: 75%;
+  }
+
+  .section-2__center__footer img {
+    width: 60px;
+  }
+
+  .section-2__side:first-child .content {
+    font-size: 16px;
+  }
+
+  .section-2__side-left .content {
+    font-size: 36px;
+  }
+
+  .section-2__side .title {
+    font-size: 10px;
+  }
 }

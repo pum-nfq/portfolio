@@ -75,3 +75,20 @@
     font-size: 1.5rem;
   }
 }
+
+@media only screen and (max-width: 818px) {
+  .speak {
+    font-size: 24px;
+  }
+  .speaker {
+    margin-top: 3rem;
+  }
+  .speaker p:first-child {
+    font-size: 1rem;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 30px;
+  }
+}

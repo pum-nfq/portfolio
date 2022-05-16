@@ -47,7 +47,6 @@
 }
 
 @media only screen and (max-width: 1074px) {
-
   .section-3__content__item > p {
     font-size: 16px;
   }
@@ -63,5 +62,16 @@
 
   .section-3__content__img-wrapper {
     height: 230px;
+  }
+}
+
+@media only screen and (max-width: 818px) {
+  .section-3__content__img-wrapper img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .section-3__content__item > p {
+    font-size: 14px;
   }
 }

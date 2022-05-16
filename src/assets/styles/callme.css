@@ -54,3 +54,18 @@
   width: 100%;
   padding-left: 80px;
 }
+
+@media only screen and (max-width: 818px) {
+  .call-me-ctn {
+    margin-top: 5rem;
+  }
+
+  .call-me {
+    width: 300px;
+    height: 300px;
+  }
+
+  .call-me a {
+    font-size: 72px;
+  }
+}
