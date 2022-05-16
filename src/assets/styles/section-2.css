@@ -26,7 +26,7 @@
   gap: 2rem;
 }
 
-.section-2__side:last-child .section-2__side__content {
+.section-2__side-left .section-2__side__content {
   align-items: flex-end !important;
 }
 
@@ -42,9 +42,8 @@
   font-family: var(--secondary-font);
 }
 
-.section-2__side:last-child .content {
+.section-2__side-left .content {
   transition: ease 300ms;
-
   font-size: 72px;
   font-family: var(--secondary-font);
 }
@@ -88,4 +87,9 @@
 .section-2__center__footer img {
   width: 130px;
   cursor: pointer;
+}
+
+
+.section-2-mobile {
+  display: none;
 }

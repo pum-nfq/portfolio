@@ -13,7 +13,7 @@
 .swiper-button-next {
   color: #666 !important;
   transition: ease 300ms;
-  height: 200px;
+  height: fit-content;
 }
 
 .swiper-button-prev:hover,

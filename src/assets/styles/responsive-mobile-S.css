@@ -1,11 +1,21 @@
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 320px) {
   .wrapper {
-    width: calc(425px - 50px);
+    width: calc(320px - 50px);
     margin: 0 auto;
   }
 
+  .drawer {
+    max-width: 100%;
+    z-index: 100;
+  }
+
+  .drawer a {
+    padding: 8px 8px 8px 8px;
+    font-size: 18px;
+  }
+
   .section-1__title {
-    font-size: 26px;
+    font-size: 20px;
   }
 
   .section-2 {
@@ -18,14 +28,14 @@
   }
   .section-2__center {
     width: 100%;
-    height: 650px;
+    height: 600px;
   }
   .section-2__center__wrapper {
     width: 100%;
-    height: 80%;
+    height: 70%;
   }
   .section-2__center__footer img {
-    width: 50px;
+    width: 40px;
   }
 
   .section-2-mobile {
@@ -88,8 +98,11 @@
     flex-wrap: wrap;
   }
 
-  .section-4__tbody td {
-    text-align: left;
+  .section-4__thead {
+    height: 20px;
+  }
+  .section-4__thead p {
+    font-size: 10px;
   }
 
   .section-3__content__item {
@@ -99,11 +112,11 @@
   }
 
   .section-4__title-job {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .section-4__workplace {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .section-5 {
@@ -121,16 +134,29 @@
   }
 
   .speak {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .speaker p:first-child {
-    font-size: 14px;
+    font-size: 10px;
+  }
+
+  .speaker p:last-child {
+    font-size: 8px;
   }
 
   .swiper-button-prev::after,
   .swiper-button-next::after {
-    font-size: 30px;
+    font-size: 20px;
+  }
+
+  .call-me {
+    width: 250px;
+    height: 250px;
+  }
+
+  .call-me a {
+    font-size: 60px;
   }
 
   .footer {
