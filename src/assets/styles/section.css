@@ -1,8 +1,8 @@
 .section {
   width: 100%;
   height: fit-content;
-  padding-bottom: 7rem;
   border-bottom: 1px solid #ccc;
+  padding-bottom: 5rem;
 }
 
 .section-title {
@@ -20,4 +20,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media only screen and (max-width: 1074px) {
+  .section-title {
+    font-size: 40px;
+  }
 }

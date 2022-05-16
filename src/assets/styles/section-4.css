@@ -3,12 +3,17 @@
   font-family: var(--secondary-font);
 }
 
+.section-4__table td {
+  vertical-align: top;
+  text-align: left;
+}
+
 .section-4__thead {
   height: 100px;
 }
 .section-4__thead th {
-    text-align: left;
-    width: calc(100% / 3);
+  text-align: left;
+  width: calc(100% / 3);
 }
 .section-4__thead p {
   font-size: 14px;
@@ -17,19 +22,33 @@
 }
 
 .section-4__tbody {
-    width: 100%;
+  width: 100%;
 }
 
 .section-4__title-job {
   transition: ease 300ms;
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .section-4__workplace {
-    font-size: 16px;
-    color: #666;
+  font-size: 16px;
+  color: #666;
 }
 
 .section-4__tbody tr {
   height: 100px;
+}
+
+@media only screen and (max-width: 1074px) {
+  .section-4__thead {
+    height: 60px;
+  }
+
+  .section-4__tbody tr {
+    height: 40px;
+  }
+
+  .section-4__title-job {
+    font-size: 20px;
+  }
 }

@@ -1,7 +1,7 @@
 .swiper {
   width: 100%;
   height: fit-content;
-  padding: 5rem 0;
+  padding-top: 5rem;
 }
 
 .swiper-wrapper {
@@ -62,4 +62,16 @@
 .speaker a {
   text-decoration: none;
   color: orangered;
+}
+
+@media only screen and (max-width: 1074px) {
+  .speak {
+    font-size: 36px;
+  }
+  .speaker {
+    margin-top: 3rem;
+  }
+  .speaker p:first-child {
+    font-size: 1.5rem;
+  }
 }

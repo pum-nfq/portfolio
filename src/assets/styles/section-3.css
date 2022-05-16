@@ -1,4 +1,4 @@
-@import url('./animation.css'); /* Using a url */
+@import url("./animation.css"); /* Using a url */
 
 .section-3__content__item {
   width: 250px;
@@ -20,6 +20,11 @@
   gap: 35px;
 }
 
+.section-3__content__item > p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .section-3__content__img-wrapper img {
   width: 100px;
   height: 100px;
@@ -39,4 +44,24 @@
   font-size: 3rem;
   font-weight: 200;
   font-family: var(--secondary-font);
+}
+
+@media only screen and (max-width: 1074px) {
+
+  .section-3__content__item > p {
+    font-size: 16px;
+  }
+
+  .section-3__content__img-wrapper img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .section-3__content__img-wrapper p {
+    font-size: 1.5rem;
+  }
+
+  .section-3__content__img-wrapper {
+    height: 230px;
+  }
 }
