@@ -1,20 +1,21 @@
 @media only screen and (max-width: 1024px) {
   .wrapper {
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 3rem;
   }
-
+  
   .navbar__item:nth-child(2) {
     display: none;
   }
 
   .navbar__item:nth-child(3) img {
-    height: 60px;
+    height: 40px;
   }
 
   .navbar__item:nth-child(4) {
     display: none;
   }
+  
   .navbar__item:nth-child(3) {
     justify-content: flex-end;
   }
@@ -28,7 +29,12 @@
   }
 
   .menu i {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+
+  .drawer {
+    max-width: 50%;
+    border: 1px solid #ccc;
   }
 
   .section-title {
@@ -65,7 +71,7 @@
   }
 
   .section-2__center__footer img {
-    width: 100px;
+    width: 80px;
   }
 
   .section-2__side:first-child .content {
@@ -97,8 +103,8 @@
   }
 
   .section-5__item img {
-    max-width: 300px;
-    height: 300px;
+    max-width: 250px;
+    height: 250px;
   }
 
   .section-5__item {

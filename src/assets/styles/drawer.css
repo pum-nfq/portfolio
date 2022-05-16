@@ -18,9 +18,9 @@
   font-size: 25px;
   color: #818181;
   display: block;
-  transition: 0.3s;
+  transition: ease 0.3s;
 }
 
 .drawer a:hover {
-  color: #f1f1f1;
+  color: orangered;
 }

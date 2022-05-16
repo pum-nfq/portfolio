@@ -16,6 +16,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./src/assets/styles/wrapper.css">
+    <link rel="stylesheet" href="./src/assets/styles/section.css">
     <link rel="stylesheet" href="./src/assets/styles/navbar.css" />
     <link rel="stylesheet" href="./src/assets/styles/section-1.css" />
     <link rel="stylesheet" href="./src/assets/styles/section-2.css" />
@@ -29,6 +31,7 @@
     <link rel="stylesheet" href="./src/assets/styles/responsive-1024.css">
     <link rel="stylesheet" href="./src/assets/styles/responsive-tablet.css" />
     <link rel="stylesheet" href="./src/assets/styles/responsive-moblie.css" />
+    
     <title>Portfolio</title>
   </head>
   <body>
@@ -51,72 +54,10 @@
           <i class="fa-solid fa-bars" onclick="openNav()"></i>
         </section>
         <section class="navbar__item">
-          <!-- Dropdown -->
-          <div class="dropdown">
-            <a href="#" class="navbar__item--active">HOME</a>
-            <div class="dropdown__content">
-              <div>
-                <a href="#" class="dropdown__content__item">Home Default</a>
-                <a href="#" class="dropdown__content__item">Home Studio</a>
-                <a href="#" class="dropdown__content__item">Home Agency</a>
-                <a href="#" class="dropdown__content__item">Home Minimal</a>
-                <a href="#" class="dropdown__content__item">Home Dark</a>
-              </div>
-              <div>
-                <a href="#" class="dropdown__content__item">Home Parallax</a>
-                <a href="#" class="dropdown__content__item">Home Freelancer</a>
-                <a href="#" class="dropdown__content__item">Home Vertical</a>
-                <a href="#" class="dropdown__content__item">Home Trending</a>
-                <a href="#" class="dropdown__content__item">Home Modern</a>
-              </div>
-            </div>
-          </div>
-          <div class="dropdown">
-            <a href="#">PORTFOLIO</a>
-            <div class="dropdown__content">
-              <div>
-                <a href="#" class="dropdown__content__item">Works Grid</a>
-                <a href="#" class="dropdown__content__item">Works Masony</a>
-                <a href="#" class="dropdown__content__item">Works Listing</a>
-                <a href="#" class="dropdown__content__item">Works Carousel</a>
-                <a href="#" class="dropdown__content__item">Works Showcase 1</a>
-                <a href="#" class="dropdown__content__item">Works Showcase 2</a>
-              </div>
-            </div>
-          </div>
-          <div class="dropdown">
-            <a href="#">BLOG</a>
-            <div class="dropdown__content">
-              <div>
-                <a href="#" class="dropdown__content__item">Blog Grid</a>
-                <a href="#" class="dropdown__content__item">Blog Masony</a>
-                <a href="#" class="dropdown__content__item">Blog Sidebar</a>
-                <a href="#" class="dropdown__content__item">Blog Post</a>
-                <a href="#" class="dropdown__content__item"
-                  >Blog Post Sidebar</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="dropdown">
-            <a href="#">PAGE</a>
-            <div class="dropdown__content">
-              <div>
-                <a href="#" class="dropdown__content__item">About Us</a>
-                <a href="#" class="dropdown__content__item">About Me</a>
-                <a href="#" class="dropdown__content__item">Services</a>
-                <a href="#" class="dropdown__content__item">Service Detail</a>
-                <a href="#" class="dropdown__content__item">Pricing</a>
-              </div>
-              <div>
-                <a href="#" class="dropdown__content__item">Team</a>
-                <a href="#" class="dropdown__content__item">FAQ</a>
-                <a href="#" class="dropdown__content__item">Contact</a>
-                <a href="#" class="dropdown__content__item">Page 404</a>
-                <a href="#" class="dropdown__content__item">Coming Soon</a>
-              </div>
-            </div>
-          </div>
+          <a href="#" class="navbar__item--active">HOME</a>
+          <a href="#">PORTFOLIO</a>
+          <a href="#">BLOG</a>
+          <a href="#">PAGE</a>
         </section>
         <section class="navbar__item">
           <img
@@ -286,8 +227,14 @@
           </section>
         </div>
       </section>
-
       <!-- <- Section 2 -->
+
+      <!-- Section 2 mobile -> -->
+      <div class="section-2-mobile">
+        
+      </div>
+
+      <!-- <- Section 2 mobile  -->
 
       <!-- Section 3 -> -->
       <section class="section">
@@ -460,7 +407,7 @@
                   data-aos-duration="1000"
                   data-aos-offset="200"
                   data-aos-easing="ease-in-sine"
-                  data-aos-delay="1250"
+                  data-aos-delay="1050"
                 >
                   <p class="section-4__title-job">
                     Fresher Front-end Developer
@@ -475,7 +422,7 @@
                   data-aos-duration="1000"
                   data-aos-offset="200"
                   data-aos-easing="ease-in-sine"
-                  data-aos-delay="850"
+                  data-aos-delay="650"
                 >
                   <p class="section-4__title-job">
                     Faculty-level scientific research
