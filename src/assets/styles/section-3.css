@@ -1,4 +1,4 @@
-@import url("./animation.css"); /* Using a url */
+@import url('./animation.css'); /* Using a url */
 
 .section-3__content__item {
   width: 250px;
@@ -89,5 +89,17 @@
   .section-3__content__item:nth-child(2),
   .section-3__content__item:nth-child(3) {
     margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .section-3__content__item {
+    width: 120px;
+  }
+}
+
+@media only screen and (max-width: 425px) { 
+  .section-3__content__item {
+    width: 105px;
   }
 }

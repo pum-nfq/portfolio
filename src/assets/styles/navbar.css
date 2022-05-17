@@ -163,11 +163,35 @@
     max-width: 50%;
     display: inline-block;
     height: 100%;
+    width: fit-content;
     display: flex;
     align-items: center;
   }
 
   .menu i {
     font-size: 35px;
+  }
+}
+
+
+@media only screen and (max-width: 475px) {
+  .navbar__item {
+    gap: 0;
+    width: fit-content;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .navbar__item:nth-child(2) img {
+    height: 40px;
+  }
+  .menu i {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .wrapper {
+    width: calc(320px - 50px);
   }
 }

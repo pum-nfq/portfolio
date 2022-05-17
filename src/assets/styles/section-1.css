@@ -10,7 +10,7 @@
 }
 
 .section-1__title {
-  width: 1200px;
+  width: 100%;
   font-size: 5rem;
   font-weight: 400;
   text-align: center;
@@ -32,5 +32,20 @@
 @media only screen and (max-width: 650px) {
   .section-1__title {
     font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .section-1 {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .section-1 {
+    margin-top: 0rem;
+  }
+  .section-1__title {
+    font-size: 25px;
   }
 }
