@@ -178,6 +178,9 @@
 }
 
 @media only screen and (max-width: 475px) {
+  .navbar {
+    height: 70px;
+  }
   .navbar__item {
     gap: 0;
     width: fit-content;
@@ -185,6 +188,9 @@
 }
 
 @media only screen and (max-width: 425px) {
+  .navbar {
+    margin-bottom: 1rem;
+  }
   .navbar__item:nth-child(2) img {
     height: 40px;
   }
@@ -194,7 +200,7 @@
 }
 
 @media only screen and (max-width: 370px) {
-  .wrapper {
-    width: calc(320px - 50px);
+  .navbar {
+    margin-bottom: 1rem;
   }
 }

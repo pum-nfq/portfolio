@@ -29,10 +29,13 @@
     <link rel="stylesheet" href="./src/assets/styles/swiper.css" />
     <link rel="stylesheet" href="./src/assets/styles/callme.css" />
     <link rel="stylesheet" href="./src/assets/styles/scroll2Top.css" />
-
+    <link rel="stylesheet" href="./src/assets/styles/loader.css">
     <title>Portfolio</title>
   </head>
   <body>
+    <div id="loading">
+      <img id="loading-image" src="./src/assets/images/loader.gif" alt="Loading..." />
+    </div>
     <div class="overlay" id="overlay" onclick="closeNav()"></div>
     <div class="scroll-2-top" id="scroll2Top" onclick="scroll2Top()">
       <i class="fas fa-angle-up"></i>
@@ -761,14 +764,14 @@
     <!-- Carasoul library -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
-      const swiper = new Swiper('.swiper', {
+      const swiper = new Swiper(".swiper", {
         // Optional parameters
         loop: true,
         cssMode: true,
         // Navigation arrows
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
 
         mousewheel: true,
@@ -782,6 +785,8 @@
     <script>
       AOS.init();
     </script>
+
+   <script src="./src/assets/js/loader.js"></script>
 
     <!-- FontAwesome library -->
     <script
