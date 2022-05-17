@@ -13,7 +13,6 @@
 body {
   font-family: var(--primary-font);
   position: relative;
-  overflow-x: hidden;
 }
 
 

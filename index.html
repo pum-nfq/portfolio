@@ -28,11 +28,6 @@
     <link rel="stylesheet" href="./src/assets/styles/drawer.css" />
     <link rel="stylesheet" href="./src/assets/styles/swiper.css" />
     <link rel="stylesheet" href="./src/assets/styles/callme.css" />
-    <!-- <link rel="stylesheet" href="./src/assets/styles/responsive-1024.css" />
-    <link rel="stylesheet" href="./src/assets/styles/responsive-tablet.css" />
-    <link rel="stylesheet" href="./src/assets/styles/responsive-moblie-L.css" />
-    <link rel="stylesheet" href="./src/assets/styles/responsive-mobile-M.css" />
-    <link rel="stylesheet" href="./src/assets/styles/responsive-mobile-S.css" /> -->
 
     <title>Portfolio</title>
   </head>
@@ -52,9 +47,6 @@
 
       <!-- Navigation header -> -->
       <nav class="navbar">
-        <section class="menu">
-          <i class="fa-solid fa-bars" onclick="openNav()"></i>
-        </section>
         <section class="navbar__item">
           <a href="#" class="navbar__item--active">HOME</a>
           <a href="#">PORTFOLIO</a>
@@ -73,6 +65,9 @@
           <i class="fab fa-facebook-messenger"></i>
           <i class="fab fa-github"></i>
           <i class="fab fa-twitter"></i>
+        </section>
+        <section class="menu">
+          <i class="fa-solid fa-bars" onclick="openNav()"></i>
         </section>
       </nav>
       <!-- <- Navigation header -->
@@ -704,14 +699,14 @@
     <!-- Carasoul library -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
-      const swiper = new Swiper(".swiper", {
+      const swiper = new Swiper('.swiper', {
         // Optional parameters
         loop: true,
         cssMode: true,
         // Navigation arrows
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
 
         mousewheel: true,
@@ -735,11 +730,11 @@
     <!-- Navigation side -->
     <script>
       function openNav() {
-        document.getElementById("drawer").style.width = "100%";
+        document.getElementById('drawer').style.width = '100%';
       }
 
       function closeNav() {
-        document.getElementById("drawer").style.width = "0";
+        document.getElementById('drawer').style.width = '0';
       }
     </script>
   </body>
