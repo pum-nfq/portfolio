@@ -1,0 +1,43 @@
+@import url('./animation');
+
+.scroll-2-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  background-color: orangered;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: ease-in-out 0.3s;
+
+  cursor: auto;
+
+  opacity: 0;
+
+  z-index: 2;
+
+  box-shadow: rgb(0 0 0 / 2%) 0px 14px 28px, rgb(0 0 0 / 15%) 0px 10px 10px;
+}
+
+.scroll-2-top i {
+  font-size: 20px;
+  color: white;
+}
+
+.scroll-2-top:hover i {
+  animation: upndown 600ms infinite;
+}
+
+@media only screen and (max-width: 650px) {
+  .scroll-2-top {
+    width: 50px;
+    height: 50px;
+  }
+}

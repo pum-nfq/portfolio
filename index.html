@@ -28,30 +28,65 @@
     <link rel="stylesheet" href="./src/assets/styles/drawer.css" />
     <link rel="stylesheet" href="./src/assets/styles/swiper.css" />
     <link rel="stylesheet" href="./src/assets/styles/callme.css" />
+    <link rel="stylesheet" href="./src/assets/styles/scroll2Top.css" />
 
     <title>Portfolio</title>
   </head>
   <body>
+    <div class="overlay" id="overlay" onclick="closeNav()"></div>
+    <div class="scroll-2-top" id="scroll2Top" onclick="scroll2Top()">
+      <i class="fas fa-angle-up"></i>
+    </div>
     <div class="wrapper">
       <!-- Drawer Sidenav -> -->
       <div class="drawer" id="drawer">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
           >&times;</a
         >
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <a
+          href="javascript:void(0)"
+          onclick="scrollToElement('about'); closeNav()"
+          >About</a
+        >
+        <a
+          href="javascript:void(0)"
+          onclick="scrollToElement('skills'); closeNav()"
+          >Skills</a
+        >
+        <a
+          href="javascript:void(0)"
+          onclick="scrollToElement('exp'); closeNav()"
+          >Exp</a
+        >
+        <a
+          href="javascript:void(0)"
+          onclick="scrollToElement('projects'); closeNav()"
+          >Projects</a
+        >
+        <a
+          href="javascript:void(0)"
+          onclick="scrollToElement('review'); closeNav()"
+          >Review</a
+        >
       </div>
       <!-- <- Drawer Sidenav -->
 
       <!-- Navigation header -> -->
       <nav class="navbar">
         <section class="navbar__item">
-          <a href="#" class="navbar__item--active">HOME</a>
-          <a href="#">PORTFOLIO</a>
-          <a href="#">BLOG</a>
-          <a href="#">PAGE</a>
+          <a href="javascript:void(0)" onclick="scrollToElement('about')"
+            >About</a
+          >
+          <a href="javascript:void(0)" onclick="scrollToElement('skills')"
+            >Skills</a
+          >
+          <a href="javascript:void(0)" onclick="scrollToElement('exp')">Exp</a>
+          <a href="javascript:void(0)" onclick="scrollToElement('projects')"
+            >Projects</a
+          >
+          <a href="javascript:void(0)" onclick="scrollToElement('review')"
+            >Review</a
+          >
         </section>
         <section class="navbar__item">
           <img
@@ -61,10 +96,18 @@
           />
         </section>
         <section class="navbar__item">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-facebook-messenger"></i>
-          <i class="fab fa-github"></i>
-          <i class="fab fa-twitter"></i>
+          <a href="https://facebook.com/ddkhoa1206" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="mailto:dangkhoa.duong@nfq.asia">
+            <i class="fa-solid fa-at"></i>
+          </a>
+          <a href="https://github.com/pum-khoa">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://twitter.com/DuongDangKhoa13">
+            <i class="fab fa-twitter"></i>
+          </a>
         </section>
         <section class="menu">
           <i class="fa-solid fa-bars" onclick="openNav()"></i>
@@ -87,7 +130,10 @@
       </section>
       <!-- <- Section 1 -->
 
+      <section class="space-to-scroll" id="about"></section>
+
       <!-- Section 2 -> -->
+
       <section class="section-2">
         <div class="section-2__side">
           <div
@@ -132,13 +178,7 @@
             </section>
           </div>
         </div>
-        <div
-          class="section-2__center"
-          data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-        >
+        <div class="section-2__center">
           <div class="section-2__center__wrapper">
             <img src="./src/assets/images/avatar.jpg" alt="avatar" />
           </div>
@@ -148,7 +188,7 @@
               alt="logo-section-2"
               data-aos="fade-up"
               data-aos-duration="800"
-              data-aos-offset="200"
+              data-aos-offset="50"
               data-aos-easing="ease-in-sine"
               data-aos-delay="50"
             />
@@ -157,7 +197,7 @@
               alt="logo-section-2"
               data-aos="fade-up"
               data-aos-duration="800"
-              data-aos-offset="200"
+              data-aos-offset="50"
               data-aos-easing="ease-in-sine"
               data-aos-delay="150"
             />
@@ -166,7 +206,7 @@
               alt="logo-section-2"
               data-aos="fade-up"
               data-aos-duration="800"
-              data-aos-offset="200"
+              data-aos-offset="50"
               data-aos-easing="ease-in-sine"
               data-aos-delay="250"
             />
@@ -175,7 +215,7 @@
               alt="logo-section-2"
               data-aos="fade-up"
               data-aos-duration="800"
-              data-aos-offset="200"
+              data-aos-offset="50"
               data-aos-easing="ease-in-sine"
               data-aos-delay="350"
             />
@@ -184,7 +224,7 @@
               alt="logo-section-2"
               data-aos="fade-up"
               data-aos-duration="800"
-              data-aos-offset="200"
+              data-aos-offset="50"
               data-aos-easing="ease-in-sine"
               data-aos-delay="450"
             />
@@ -303,6 +343,8 @@
       </section>
       <!-- <- Section 2 -->
 
+      <section class="space-to-scroll" id="skills"></section>
+
       <!-- Section 3 -> -->
       <section class="section">
         <h2
@@ -402,6 +444,8 @@
         </div>
       </section>
       <!-- <- Section 3 -->
+
+      <section class="space-to-scroll" id="exp"></section>
 
       <!-- Section 4 -> -->
       <section class="section">
@@ -589,6 +633,8 @@
 
       <!-- <- Section 4 -->
 
+      <section class="space-to-scroll" id="projects"></section>
+
       <!-- Section 5 -> -->
       <section class="section">
         <h2
@@ -632,6 +678,8 @@
         </div>
       </section>
       <!-- <- Section 5 -->
+
+      <section class="space-to-scroll" id="review"></section>
 
       <!-- Section 6 -> -->
       <section class="section">
@@ -683,7 +731,7 @@
         </section>
         <section class="call-me-ctn">
           <div class="call-me">
-            <a href="#" text-hover="Call me">Call me</a>
+            <a href="tel:+84833495422" text-hover="Call me">Call me</a>
           </div>
         </section>
       </section>
@@ -696,6 +744,7 @@
       </footer>
       <!-- <- Footer -->
     </div>
+
     <!-- Carasoul library -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
@@ -728,14 +777,12 @@
     ></script>
 
     <!-- Navigation side -->
-    <script>
-      function openNav() {
-        document.getElementById('drawer').style.width = '100%';
-      }
+    <script src="./src/assets/js/handleNavMobile.js"></script>
 
-      function closeNav() {
-        document.getElementById('drawer').style.width = '0';
-      }
-    </script>
+    <!-- SrollTo -->
+    <script src="./src/assets/js/scrollTo.js"></script>
+
+    <!-- scroll-2-top -->
+    <script src="./src/assets/js/scroll2Top.js"></script>
   </body>
 </html>
