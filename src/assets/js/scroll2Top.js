@@ -1,6 +1,6 @@
-window.addEventListener('scroll', (event) => {
-  let scroll = this.scrollY;
-  let scroll2TopElement = document.getElementById('scroll2Top');
+window.addEventListener('scroll', () => {
+  const scroll = this.scrollY;
+  const scroll2TopElement = document.getElementById('scroll2Top');
   if (scroll !== 0) {
     scroll2TopElement.style.opacity = '1';
     scroll2TopElement.style.cursor = 'pointer';
@@ -10,6 +10,7 @@ window.addEventListener('scroll', (event) => {
   }
 });
 
+// eslint-disable-next-line no-unused-vars
 function scroll2Top() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
