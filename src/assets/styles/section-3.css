@@ -30,14 +30,14 @@
   height: 100px;
   object-fit: contain;
   filter: grayscale(100%);
-  transition: ease 300ms;
+  /* transition: all 800ms; */
   cursor: pointer;
 }
 
 .section-3__content__img-wrapper img:hover {
   filter: none;
   animation-name: shake;
-  animation-duration: 600ms;
+  animation-duration: 800ms;
 }
 
 .section-3__content__img-wrapper p {
@@ -98,7 +98,7 @@
   }
 }
 
-@media only screen and (max-width: 425px) { 
+@media only screen and (max-width: 425px) {
   .section-3__content__item {
     width: 105px;
   }
