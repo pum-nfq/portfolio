@@ -30,7 +30,7 @@
   height: 100px;
   object-fit: contain;
   filter: grayscale(100%);
-  /* transition: all 800ms; */
+  transition: all 400ms;
   cursor: pointer;
 }
 
